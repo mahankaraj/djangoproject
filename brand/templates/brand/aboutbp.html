@@ -1,0 +1,30 @@
+{% extends 'parents/base.html' %}
+{% load static %}
+{% block title %}
+{{title}}
+{% endblock title %}
+{% block title_header %}{{title}}{% endblock title_header %}
+{% block content %}
+
+<div class="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-5 col-lg-5 col-md-5 co-sm-l2">
+                <div class="about_img">
+                    <figure><img src="{{branding.picture.url}}" alt="img" /></figure>
+                </div>
+            </div>
+            <div class="col-xl-7 col-lg-7 col-md-7 co-sm-l2">
+                <div class="about_box">
+                    <span>نام:{{branding.name}}</span>
+                    <p>{{branding.price}} :قیمت</p>
+                    <p>{{branding.sim}} :تعداد سیم کارت</p>
+                    <p>{{branding.ram}} :تعداد رم</p>
+                    <p>1350-5825-4564-5963 ماهان شورگشتی جهت خرید <hr>09307979629 بعد از واریز شناسه پرداخت را به این شماره ارسال نمایید</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}

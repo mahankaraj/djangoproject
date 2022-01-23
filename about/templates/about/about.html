@@ -1,0 +1,11 @@
+{% extends 'parents/base.html' %}
+{% load static %}
+{% block title %}
+{{title}}
+{% endblock title %}
+{% block title_header %}{{title}}{% endblock title_header %}
+{% block content %}
+<!-- start about -->
+{% include 'about/aboutp.html' %}
+<!-- end about -->
+{% endblock content %}
